@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mundo de Blocos - V.1.0</title>
+<link rel="stylesheet" href="estilizacao.css">
+</head>
+<body>
+
+<div class="chao"></div>
+<div class="montanha"></div>
+<div class="estatua">
+  <div class="cabeca"></div>
+  <div class="bracos"></div>
+  <div class="corpo"></div>
+  <div class="base"></div>
+</div>
+
+<main>
+  <h1>Mundo de Blocos</h1>
+  <p class="versao">V.1.0</p>
+
+  <label for="nome">Nome do jogador</label>
+  <input class="entrada" type="text" id="nome" value="Aventureiro" maxlength="14">
+
+  <div class="status">
+    <p>❤️ Vida <span class="barra vida"></span> 100</p>
+    <p>🍗 Fome <span class="barra fome"></span> 100</p>
+    <p><span class="diamante"></span>Diamantes: 0</p>
+  </div>
+
+  <div class="grupo">
+    <p class="titulo-grupo">Escolha sua ferramenta</p>
+    <label class="ferramenta">
+      <input type="radio" name="ferramenta" checked>
+      <span>⛏️</span>PICARETA
+    </label>
+    <label class="ferramenta">
+      <input type="radio" name="ferramenta">
+      <span>🪓</span>MACHADO
+    </label>
+    <label class="ferramenta">
+      <input type="radio" name="ferramenta">
+      <span>⚔️</span>ESPADA
+    </label>
+  </div>
+
+  <a class="botao" href="#">COMEÇAR AVENTURA</a>
+</main>
+
+</body>
+</html>

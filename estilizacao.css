@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: linear-gradient(#1c2a5e, #d9675a, #ffc46b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* cenario */
+.chao {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 15vh;
+  background: #4aa84f;
+  border-top: 10px solid #7a4b2a;
+}
+
+.montanha {
+  position: fixed;
+  right: 5vw;
+  bottom: 15vh;
+  width: 200px;
+  height: 50px;
+  background: #2a4a6e;
+}
+
+/* cristo redentor feito com blocos */
+.estatua {
+  position: fixed;
+  left: 65%;
+  bottom: 25vh;
+  width: 100px;
+  height: 150px;
+}
+
+.estatua div {
+  position: absolute;
+  background: #ece6d4;
+}
+
+.cabeca { left: 42px; top: 0; width: 16px; height: 18px; }
+.bracos { left: 0; top: 20px; width: 100px; height: 12px; }
+.corpo { left: 35px; top: 20px; width: 30px; height: 80px; }
+.base { left: 15px; top: 100px; width: 70px; height: 50px; }
+
+/* painel do jogo */
+main {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  background: rgba(15, 20, 40, 0.85);
+  border-left: 6px solid #ffd23f;
+  padding: 24px;
+}
+
+h1 {
+  font-size: 42px;
+  text-transform: uppercase;
+  color: #ffd23f;
+  text-shadow: 3px 3px 0 #1c2a5e;
+}
+
+.versao {
+  color: #ffd23f;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.entrada {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  background: #8b5a2b;
+  border: 3px solid #3e2611;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* status */
+.status {
+  margin-bottom: 20px;
+}
+
+.status p {
+  margin-bottom: 8px;
+}
+
+.barra {
+  display: inline-block;
+  width: 150px;
+  height: 14px;
+  border: 2px solid black;
+  vertical-align: middle;
+  margin: 0 8px;
+}
+
+.vida { background: #e5383b; }
+.fome { background: #f4a259; }
+
+.diamante {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: #4fe3f0;
+  transform: rotate(45deg);
+  margin: 0 8px 0 4px;
+}
+
+/* ferramentas */
+.grupo {
+  margin-bottom: 24px;
+}
+
+.titulo-grupo {
+  color: #ffd23f;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.ferramenta {
+  display: inline-block;
+  width: 32%;
+  vertical-align: top;
+  text-align: center;
+  padding: 12px 4px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 3px solid #555;
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 0;
+}
+
+.ferramenta span {
+  display: block;
+  font-size: 30px;
+}
+
+/* botao */
+.botao {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #1a1206;
+  background: #ffd23f;
+  padding: 15px;
+  border: 3px solid #1a1206;
+  box-shadow: 0 5px 0 #b8860b;
+}
+
+.botao:hover {
+  background: #ffe073;
+}
+
+.botao:active {
+  box-shadow: none;
+  transform: translateY(5px);
+}
