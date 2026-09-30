@@ -38,8 +38,8 @@ body {
 /* cristo redentor feito com blocos */
 .estatua {
   position: fixed;
-  left: 65%;
-  bottom: 25vh;
+  left: 87%;
+  bottom: 20vh;
   width: 100px;
   height: 150px;
 }
@@ -173,4 +173,10 @@ label {
 .botao:active {
   box-shadow: none;
   transform: translateY(5px);
+}
+
+@media (max-width: 600px) {
+  .estatua {
+    left: 55%;
+  }
 }
